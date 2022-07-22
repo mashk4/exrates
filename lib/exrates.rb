@@ -45,19 +45,3 @@ class ExRates
   end
 
 end
-
-
-# exrate = ExRate.new
-# скачать курсы валют за сегодня
-
-# exrate = ExRate.new(5.days.ago)
-# скачать курсы за конкретную дату
-
-# exrate.refreshed_at
-# => 2020-11-25 17:13:18
-
-# exrate.rate('USD', 'UAH')
-# => 36.56
-
-# exrate.exhange(Money.new(100_00, 'UAH'), 'USD')
-# => #<Money#... 2.8 USD>
