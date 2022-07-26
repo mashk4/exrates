@@ -21,36 +21,37 @@ Or install it yourself as:
 ## Usage
 
 **Find out the exchange rate in relation to the hryvnia for a certain currency:**
-
+```ruby
 currency = ExRate.new
 
 puts currency.rate('USD')
+```
 
 
 **Find out the exchange rate for a specific date:**
-
+```ruby
 currency = ExRate.new('22.02.2022')
 
 puts currency.rate('USD')
-
+```
 
 **Convertion currency to hryvna:**
-
+```ruby
 usd = Money.new('1_00', 'USD')
 
 result = ExRates.new.exchange(usd, 'UAH')
 
 puts "1.00 USD -> UAH: #{result.format}"
-
+```
 
 **Convertion one currency to another:**
-
+```ruby
 usd = Money.new('1_50', 'USD')
 
 result = ExRates.new.exchange(usd, 'CAD')
 
 puts "1.50 USD -> CAD: #{result.format}"
-
+```
 *See the 'Money' gem's [documentation](https://github.com/RubyMoney/money) for how to handle the Money object.*
 
 ## Contributing
