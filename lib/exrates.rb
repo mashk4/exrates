@@ -11,7 +11,7 @@ class ExRates
 
   def initialize(date = Date.today)
     @refreshed_at = Time.now
-    
+
     parse!(date)
   end
 
@@ -34,13 +34,13 @@ class ExRates
     url = "https://bank.gov.ua/NBU_Exchange/exchange?date=#{date_string}&json"
     response = URI.open(url).read
     json_doc = JSON.parse(response)
-    
-    result = json_doc.map do |node| 
-        [ node['CurrencyCodeL'], node['Amount'] ]
+
+    result = json_doc.map do |node|
+        [node['CurrencyCodeL'], node['Amount'] / node['Units']]
     end
 
     result.push(['UAH', 1])
-     
+
     @rates = result.to_h
   end
 
