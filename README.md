@@ -1,6 +1,6 @@
 # ExRates
 
-ExRates is a Ruby gem, that fethes exchange rates from National Bank of Ukraine (bank.gov.ua) and perform currency conversion. With the help of this gem, you can easily find out the exchange rate for a certain date in relation to the hryvnia and convert one currency to another. This gem also uses another gem, called 'Money'. The documentation for this gem you can read [here](https://github.com/RubyMoney/money).
+ExRates is a Ruby gem, that fethes exchange rates from National Bank of Ukraine (bank.gov.ua) and perform currency conversion. With the help of this gem, you can easily find out the exchange rate for a certain date in relation to the hryvnia and convert one currency to another. This gem also uses another gem, called 'Money'. The documentation for this gem you can read [here](https://github.com/RubyMoney/money). On Rubygems you can find it [here](https://rubygems.org/gems/exrates/versions/0.1.2).
 
 ## Installation
 
